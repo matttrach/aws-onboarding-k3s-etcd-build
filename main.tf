@@ -14,7 +14,6 @@ locals {
     ami             = "ami-01f87c43e618bf8f0"
     names           = ["k3s0","k3s1","k3s2"]
     nodes           = toset(local.names)
-    # public ssh key, BEWARE! changing this will destroy the servers!
     sshkey          = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGbArPa8DHRkmnIx+2kT/EVmdN1cORPCDYF2XVwYGTsp matt.trachier@suse.com"
  }
 
